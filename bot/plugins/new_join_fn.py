@@ -51,7 +51,7 @@ async def help_message_f(client, message):
                return
         except UserNotParticipant:
             await message.reply_text(
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Please Join My Updates Channel To Use This Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -81,8 +81,8 @@ async def help_message_f(client, message):
                     InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
                 ],
                 [
-                    InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
-                    InlineKeyboardButton('Source Code', url='https://github.com/AbirHasan2005/VideoCompress') # Must Give us Credits!
+                    InlineKeyboardButton('Developer', url='https://t.me/I_Am_Only_One_1'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
+                    InlineKeyboardButton('Source Code', url='https://github.com/safone1/VideoCompress') # Must Give us Credits!
                 ]
             ]
         ),
