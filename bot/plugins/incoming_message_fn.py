@@ -69,7 +69,7 @@ async def incoming_start_message_f(bot, update):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Please Join My Updates Channel To Use This Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
