@@ -122,7 +122,7 @@ async def incoming_compress_message_f(bot, update):
       except UserNotParticipant:
           await bot.send_message(
               chat_id=update.chat.id,
-              text="**Please Join My Updates Channel to use this Bot!**",
+              text="**Please Join My Updates Channel To Use This Bot!**",
               reply_markup=InlineKeyboardMarkup(
                   [
                       [
@@ -271,7 +271,7 @@ async def incoming_compress_message_f(bot, update):
     if duration is None or bitrate is None:
       try:
         await sent_message.edit_text(                
-          text="⚠️ Getting video meta data failed ⚠️"                
+          text="⚠️ Getting video meta data Failed ⚠️"                
         )
         chat_id = LOG_CHANNEL
         utc_now = datetime.datetime.utcnow()
@@ -389,7 +389,7 @@ async def incoming_compress_message_f(bot, update):
       delete_downloads()
       try:
         await sent_message.edit_text(                    
-          text="⚠️ Compression failed ⚠️"               
+          text="⚠️ Compression Failed ⚠️"               
         )
         chat_id = LOG_CHANNEL
         now = datetime.datetime.now()
@@ -433,7 +433,7 @@ async def incoming_cancel_message_f(bot, update):
     ikeyboard.append(InlineKeyboardButton("No 🤗", callback_data=("fuckoff").encode("UTF-8")))
     inline_keyboard.append(ikeyboard)
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
-    await update.reply_text("Are you sure? 🚫 This will stop the compression!", reply_markup=reply_markup, quote=True)
+    await update.reply_text("Are You Sure? 🚫 This will stop the Compression!", reply_markup=reply_markup, quote=True)
   else:
     delete_downloads()
     await bot.send_message(
