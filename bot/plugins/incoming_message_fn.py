@@ -61,7 +61,7 @@ async def incoming_start_message_f(bot, update):
             if user.status == "kicked":
                await bot.send_message(
                    chat_id=update.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You Are Banned. Contact Us!",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -69,7 +69,7 @@ async def incoming_start_message_f(bot, update):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="**Please Join My Updates Channel To Use This Bot!**",
+                text="**Wait A Second, \nJoin My Updates Channel To Use This Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -83,7 +83,7 @@ async def incoming_start_message_f(bot, update):
         except Exception:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/safothebot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -93,10 +93,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates')
-                ],
-                [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('Support Group', url='https://t.me/safothebot')
                 ]
             ]
         ),
@@ -114,7 +111,7 @@ async def incoming_compress_message_f(bot, update):
           if user.status == "kicked":
              await bot.send_message(
                  chat_id=update.chat.id,
-                 text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                 text="Sorry Sir, You are Banned. Contact Us!",
                  parse_mode="markdown",
                  disable_web_page_preview=True
              )
@@ -122,7 +119,7 @@ async def incoming_compress_message_f(bot, update):
       except UserNotParticipant:
           await bot.send_message(
               chat_id=update.chat.id,
-              text="**Please Join My Updates Channel To Use This Bot!**",
+              text="**Wait A Second, \nJoin My Updates Channel To Use This Bot!**",
               reply_markup=InlineKeyboardMarkup(
                   [
                       [
@@ -136,7 +133,7 @@ async def incoming_compress_message_f(bot, update):
       except Exception:
           await bot.send_message(
               chat_id=update.chat.id,
-              text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+              text="Something went Wrong. Contact my [Support Group](https://t.me/safothebot).",
               parse_mode="markdown",
               disable_web_page_preview=True
           )
@@ -145,7 +142,7 @@ async def incoming_compress_message_f(bot, update):
     try:
       await bot.send_message(
         chat_id=update.chat.id,
-        text="🤬 Reply to telegram media 🤬",
+        text="🤬 Reply To Telegram Media 🤬",
         reply_to_message_id=update.message_id
       )
     except:
@@ -217,7 +214,7 @@ async def incoming_compress_message_f(bot, update):
       if( video is None ):
         try:
           await sent_message.edit_text(
-            text="Download stopped"
+            text="Download Stopped"
           )
           chat_id = LOG_CHANNEL
           utc_now = datetime.datetime.utcnow()
@@ -231,7 +228,7 @@ async def incoming_compress_message_f(bot, update):
         except:
           pass
         delete_downloads()
-        LOGGER.info("Download stopped")
+        LOGGER.info("Download Stopped")
         return
     except (ValueError) as e:
       try:
@@ -402,7 +399,7 @@ async def incoming_compress_message_f(bot, update):
     delete_downloads()
     try:
       await sent_message.edit_text(                    
-        text="⚠️ Failed Downloaded path not exist ⚠️"               
+        text="⚠️ Failed Downloaded Path Not Exist ⚠️"               
       )
       chat_id = LOG_CHANNEL
       utc_now = datetime.datetime.utcnow()
