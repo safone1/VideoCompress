@@ -44,14 +44,14 @@ async def help_message_f(client, message):
             user = await client.get_chat_member(update_channel, message.chat.id)
             if user.status == "kicked":
                await message.reply_text(
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned. Contact Us!",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
                return
         except UserNotParticipant:
             await message.reply_text(
-                text="**Please Join My Updates Channel To Use This Bot!**",
+                text="**Wait A Second, \nJoin My Updates Channel To Use This Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -64,7 +64,7 @@ async def help_message_f(client, message):
             return
         except Exception:
             await message.reply_text(
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/safothebot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -75,10 +75,7 @@ async def help_message_f(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates')
-                ],
-                [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('Updates Channel', url='https://t.me/safonevidcompress_logs')
                 ],
                 [
                     InlineKeyboardButton('Developer', url='https://t.me/I_Am_Only_One_1'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
