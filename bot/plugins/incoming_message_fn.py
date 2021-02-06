@@ -430,7 +430,7 @@ async def incoming_cancel_message_f(bot, update):
     ikeyboard.append(InlineKeyboardButton("No 🤗", callback_data=("fuckoff").encode("UTF-8")))
     inline_keyboard.append(ikeyboard)
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
-    await update.reply_text("Are You Sure? 🚫 This will stop the Compression!", reply_markup=reply_markup, quote=True)
+    await update.reply_text("Are You Sure? 🚫 \nThis will stop the Compression!", reply_markup=reply_markup, quote=True)
   else:
     delete_downloads()
     await bot.send_message(
