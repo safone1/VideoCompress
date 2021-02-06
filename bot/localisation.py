@@ -6,7 +6,7 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "Hello {}! \n\nThis is <b>Video Compressor BOT 🔥</b> \n\n<b>Please Send Me Any Telegram Big Video File I Will Compress It To A Small Video File For You! 🥳</b> \n\n/help for more details... \n\nDev: @I_Am_Only_One_1 🙂"
+    START_TEXT = "Hello Dear! \n\nThis is <b>Video Compressor BOT 🔥</b> \n\n<b>Please Send Me Any Telegram Big Video File I Will Compress It To A Small Video File For You! 🥳</b> \n\n/help for more details... \n\nDev: @I_Am_Only_One_1 🙂"
    
     ABS_TEXT = " Please don't be selfish."
     
@@ -29,11 +29,11 @@ class Localisation:
 
     SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
     
-    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
+    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully!"
     
-    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully!"
     
-    SAVED_RECVD_DOC_FILE = "✅ Downloaded Successfully."
+    SAVED_RECVD_DOC_FILE = "✅ Downloaded Successfully!"
     
     CUSTOM_CAPTION_UL_FILE = " "
     
@@ -43,11 +43,11 @@ class Localisation:
     
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     
-    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "⚠️Already Some Process Going On!⚠️ \n\nPlease Come Back After A While. Check Live Status on Updates Channel..."
+    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "⚠️Already A Process Going On!⚠️ \n\nPlease Come Back After A While.\nCheck Live Status on Updates Channel."
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
-        "Hi, I am Video Compressor BOT 🔥\n\n1. Send or Forward Me Your Telegram Big Video File \n2. Reply The File - /compress <persentage> \nFor Example: <code>/compress 50</code> \n\nThanks For Using!! 🥰"
+        "Hi, I am Video Compressor BOT 🔥\n\n1. Send or Forward Me Your Telegram Big Video File \n2. Reply To The File - /compress with Persentage \nFor Example: <code>/compress 50</code> \n\nThanks For Using The Bot!! 🥰"
     )
     WRONG_MESSAGE = get_config(
         "STRINGS_WRONG_MESSAGE",
